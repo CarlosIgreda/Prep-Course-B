@@ -19,6 +19,7 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
+  /* 1ra solucion
   var arr=[];
   for(i=0,j=0;i<array.length;i++){
     if(array[i]%2===0){
@@ -27,17 +28,24 @@ function encuentraPares(array){
     }
   }
   return arr;
+  */
+ // 2da solucion
+ return array.filter(element => element%2===0);
 }
 
 function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+  /* 1ra solucion
   var arr=[];
   for(i=0;i<array.length;i++){
     arr[i]=Math.pow(array[i],2);
   }
   return arr;
+  */
+ // 2da solucion
+ return array.map(element=>element**2);
 }
 
 function sumaArray(array){
@@ -54,19 +62,26 @@ function sumaArray(array){
     for(var element of array) suma+=element;
     return suma;
   */
- // 3ra solucion:
+ /* 3ra solucion:
   var sum=0;
   array.forEach(element => {
     sum+=element;
   });
   return sum;
+  */
+ // 4ta solucion
+ return array.reduce((acumulador,siguiente)=>acumulador+siguiente);
 }
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
+  /* 1ra solucion
   for(i=0;num/Math.pow(10,i)>=1;i++){}
   return i;
+  */
+ // 2da solucion
+ return num.toString().length;
 }
   
   
