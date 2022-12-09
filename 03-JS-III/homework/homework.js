@@ -44,9 +44,13 @@ function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
-  var sum=0;
+ /* var sum=0;
   for(i=0;i<array.length;i++) sum+=array[i];
-  return sum;
+  return sum;*/
+  // Otra solucion:
+    var suma=0;
+    for(var element of array) suma+=element;
+    return suma;
 }
 
 function numeroDigitos(num){
