@@ -70,7 +70,7 @@ function sumaArray(array){
   return sum;
   */
  // 4ta solucion
- return array.reduce((acumulador,siguiente)=>acumulador+siguiente);
+ return array.reduce((acumulador,siguiente)=>acumulador+siguiente,0);
 }
 
 function numeroDigitos(num){
