@@ -37,6 +37,7 @@ function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
+  
   /* 1ra solucion
   var arr=[];
   for(i=0;i<array.length;i++){
